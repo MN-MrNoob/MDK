@@ -124,6 +124,7 @@
             color: #4b7c59;
             font-size: 15px;
             margin-top: 20px;
+            display: none;
         }
     </style>
 </head>
@@ -133,11 +134,11 @@
     <h1 class="header-title">Колотовкин Вадим ответы на темы</h1>
 
     <div class="search-box">
-        <input type="text" id="searchInput" class="search-input" placeholder="Введите номер темы (например: 1.3.3) или ключевое слово..." oninput="filterTopics()">
+        <input type="text" id="searchInput" class="search-input" placeholder="Введите номер или текст темы..." oninput="filterTopics()">
     </div>
 
     <div class="topics-list" id="topicsList"></div>
-    <div id="emptyHint" class="empty-hint">Начните вводить поисковый запрос, чтобы увидеть темы.</div>
+    <div id="emptyHint" class="empty-hint">Ничего не найдено по вашему запросу.</div>
 </div>
 
 <script>
@@ -299,4 +300,4 @@
         },
         {
             title: "Тема 1.2.3. Разработка технического задания на проектирование автоматизированной системы",
-            answer: "Определяет цели, тре
+            answer: "Определяет цели, требования к функцио
